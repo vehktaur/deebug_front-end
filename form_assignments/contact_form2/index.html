@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="sm-container">
+        <h1>Contact form</h1>
+        <form>
+          <div class="form__group">
+            <label for="name"> Your Name </label>
+            <div class="group__flex">
+              <input
+                type="text"
+                name="first_name"
+                id="name"
+                placeholder="First Name"
+                autofocus
+              />
+              <input type="text" name="last_name" placeholder="Last Name" />
+            </div>
+          </div>
+          <div class="form__group">
+            <label for="email"> Your Email </label>
+            <input
+              type="email"
+              id="email"
+              placeholder="e.g hello@contact.net"
+            />
+          </div>
+          <div class="form__group">
+            <label for="tel1">Phone*</label>
+            <div class="group__flex">
+              <input
+                type="tel"
+                name="phone_number"
+                id="tel1"
+                placeholder="###"
+                pattern="[0-9]{3}"
+                required
+              />
+              <input
+                type="tel"
+                name="phone_number"
+                id="tel2"
+                placeholder="###"
+                pattern="[0-9]{3}"
+                required
+              />
+              <input
+                type="tel"
+                name="phone_number"
+                id="tel3"
+                placeholder="####"
+                pattern="[0-9]{4}"
+                required
+              />
+            </div>
+          </div>
+          <div class="form__group">
+            <label for="message_subject">Message Subject*</label>
+            <select name="message_subject" id="message_subject" required>
+              <option value="" disabled>Choose an option</option>
+              <option value="job_or_career_inquiry">
+                Job or Career Inquiry
+              </option>
+              <option value="customer-support">Customer Support</option>
+
+              <option value="feedback_or_testimonial">
+                Feedback or Testimonial
+              </option>
+              <option value="other" selected>Other</option>
+            </select>
+          </div>
+          <div class="form__group">
+            <label for="message">Message*</label>
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+              required
+            ></textarea>
+          </div>
+          <hr />
+          <button>SUBMIT FORM</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

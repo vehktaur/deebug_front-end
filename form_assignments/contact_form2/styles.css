@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    align-items: center;
+    background: white url(form2_bg.png) fixed no-repeat;
+    background-size: cover;
+    color: #333;
+    display: grid;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    padding: 3rem 0;
+}
+
+/* form {
+      display: grid;
+      gap: 1rem;
+  } */
+.container {
+    margin: auto;
+    max-width: 1200px;
+    width: 95%;
+}
+
+.sm-container {
+    max-width: 800px;
+}
+
+h1 {
+    margin-bottom: 2rem;
+}
+
+.form__group {
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+input,
+textarea,
+select {
+    border: none;
+    flex: 1 1 70%;
+    font-size: 1rem;
+    padding: .8em 1em;
+    width: 100%;
+}
+
+.group__flex {
+    display: flex;
+    flex: 1 1 70%;
+    gap: 1.5rem;
+    justify-content: space-between;
+}
+
+label {
+    flex: 1 1 30%;
+    font-weight: 900;
+    height: 100%;
+    max-width: 380px;
+}
+
+.form__group:last-of-type label {
+    align-self: start;
+    margin-top: 1rem;
+}
+
+textarea {
+    resize: none;
+}
+
+button {
+    background-color: transparent;
+    border: 2px solid #333;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 900;
+    padding-block: 1em;
+    width: 300px;
+}
+
+hr {
+    margin-block: 2rem
+}

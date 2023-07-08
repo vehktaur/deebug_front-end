@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deebug Institute Survey</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header><h1>Deebug Institute Survey</h1></header>
+    <main class="container">
+      <p class="form__title">Let us know how to improve things around here</p>
+      <form>
+        <div class="form__group">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Enter your name"
+          />
+        </div>
+        <div class="form__group">
+          <label for="email">Email</label
+          ><input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your Email"
+          />
+        </div>
+        <div class="form__group">
+          <label for="dept">Department</label>
+          <select name="department" id="dept">
+            <option value="Electrical/Electronic Engineering ">
+              Electrical/Electronic Engineering
+            </option>
+            <option value="Computer Engineering ">Computer Engineering</option>
+            <option value="Chemical Engineering ">Chemical Engineering</option>
+            <option value="Production Engineering ">
+              Production Engineering
+            </option>
+            <option value="Petroleum Engineering">Petroleum Engineering</option>
+          </select>
+        </div>
+        <div class="form__group">
+          <label for="role">Which option describes your current role</label>
+          <select name="role" id="role">
+            <option value="Student">Student</option>
+            <option value="Lecturer">Lecturer</option>
+            <option value="Lab assistant">Lab assistant</option>
+            <option value="Cleaner">Cleaner</option>
+            <option value="JUPEB Student">JUPEB Student</option>
+          </select>
+        </div>
+        <div class="form__group">
+          <p class="radio_label">
+            How likely is it that you'll recommend Deebug institute to a friend
+          </p>
+          <div class="radio__items">
+            <label for="definetly"
+              ><input
+                type="radio"
+                name="radio"
+                id="definetly"
+                value="definetly"
+              />
+              Definetly</label
+            ><label for="maybe"
+              ><input type="radio" name="radio" id="maybe" value="maybe" />
+              Maybe</label
+            ><label for="not-sure">
+              <input type="radio" name="radio" id="not-sure" value="not sure" />
+              Not Sure
+            </label>
+          </div>
+        </div>
+        <div class="form__group">
+          <label for="courses">What courses are you currently taking?</label>
+          <select name="courses" id="courses">
+            <option value="" disabled selected>Select an option</option>
+            <option value="engineering maths">Engineering Maths</option>
+            <option value="fluid mechanics">Fluid Mechanics</option>
+            <option value="thermodynamics">Thermodynamics</option>
+            <option value="metal processes">Metal Processes</option>
+          </select>
+        </div>
+        <div class="form__group">
+          <label for="suggestions"
+            >Things that should be improved in the future
+            <p class="small">(Check all that apply)</p></label
+          >
+          <div class="checkbox__items">
+            <label for="time_table">
+              <input
+                type="checkbox"
+                name="time_table"
+                id="time_table"
+                value="time_table"
+              />
+              Time- table
+            </label>
+            <label for="assignments">
+              <input
+                type="checkbox"
+                name="assignments"
+                id="assignments"
+                value="assignments"
+              />
+              Assignments
+            </label>
+            <label for="heurekka">
+              <input
+                type="checkbox"
+                name="heurekka"
+                id="heurekka"
+                value="heurekka"
+              />
+              Heurekka
+            </label>
+          </div>
+        </div>
+        <button>Submit</button>
+      </form>
+    </main>
+  </body>
+</html>

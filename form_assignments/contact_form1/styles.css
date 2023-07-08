@@ -1,0 +1,135 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: white url(body_bg.jpg) fixed no-repeat;
+    font-family: Helvetica, sans-serif;
+}
+
+form {
+    border-radius: 8px;
+    padding: 3rem 1rem;
+}
+
+
+aside img {
+    height: auto;
+    width: 100%;
+}
+
+h1 {
+    margin-right: auto;
+    font-weight: 900;
+}
+
+.overlay {
+    background-color: rgba(128, 109, 214, 0.75);
+    display: grid;
+    min-height: 100vh;
+    min-width: 100%;
+    place-items: center;
+    padding-block: 1rem;
+}
+
+.container {
+    background-color: white;
+    max-width: 1100px;
+    width: 90%;
+}
+
+.row {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 900px;
+    margin: auto;
+    gap: 2rem;
+}
+
+.picture {
+    flex: 1;
+}
+
+.content {
+    align-items: center;
+    color: #303030;
+    display: flex;
+    flex: 1;
+    flex-flow: column nowrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+label {
+    width: 100%;
+}
+
+form input {
+    padding-left: 2.5em;
+    background-size: 1rem;
+    background-repeat: no-repeat;
+    background-position: left 1rem center;
+}
+
+[id="name"] {
+    background-image: url(user.png);
+
+}
+
+[id="email"] {
+    background-image: url(email.png);
+}
+
+input,
+textarea,
+button {
+    border: none;
+    border-radius: 2rem;
+    font-size: 1rem;
+    font-weight: 700;
+    outline: none;
+    padding: .8em 2em;
+    width: 100%;
+}
+
+input,
+textarea {
+    background-color: rgb(222, 222, 222);
+    resize: vertical;
+}
+
+button {
+    cursor: pointer;
+    background-color: rgb(128, 109, 214);
+    color: white;
+}
+
+button:hover {
+    opacity: .8;
+}
+
+@media (max-width: 720px) {
+    .container {
+        max-width: 400px;
+    }
+
+    .row {
+        display: block;
+    }
+
+    h1{
+        text-align: center;
+        width: 100%;
+    }
+
+    form{
+        padding-top: 0;
+    }
+
+}
