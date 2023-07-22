@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Survey-Form</title>
+<link rel="stylesheet" href="styles.css" /> 
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Nazarick Survey Form</h1>
+      <p id="description">Please fill out the survey form below </p>
+    </header>
+    <main>
+      <form id="survey-form">
+       <fieldset>
+        <label id="name-label" for="name">Name <input id="name" type="text" /placeholder="Enter your name" required></label>
+        <label for="floor">Floor Level <input id="floor" type="text" placeholder="Enter your floor level" /></label>
+        <label id="email-label" for="email">Email <input id="email" type="email" placeholder="Enter your email" required/></label>
+        <label id="number-label" for="number">Years of service (optional) <input id="number" type="number" placeholder="8" min="5" max="20"/></label>
+       </fieldset>
+        <fieldset>
+        <label> 
+          What is your current role in the Tomb?
+          <select id="dropdown">
+            <option disabled>Select current role</option>
+            <option selected>Mercenary</option>
+            <option>Pleiades</option>
+            <option>Maester</option>
+            <option>Area guardian</option>
+            <option>Floor guardian</option>
+            <option>Other</option>
+          </select>
+        </label>
+       </fieldset>
+       <fieldset> 
+         <p>Are you prepared to do whatever it takes?</p>
+        <label> 
+          <input name="preparedness" type="radio" value="definetly"/>
+          Definetly
+        </label>
+        <label> 
+          <input name="preparedness" type="radio" value="maybe"/>
+          Maybe
+        </label>
+        <label> 
+          <input name="preparedness" type="radio" value="not sure"/>
+          Not sure
+        </label>
+      </fieldset>
+      <fieldset>
+        <label>
+          Which of these floor guardians would you prefer to answer to?
+          <select>
+            <option disabled>Select a guardian</option>
+            <option>Demiurge</option>
+            <option>Cocytus </option>
+            <option>Shalltear</option>
+            <option> Gargantua</option>
+            <option>Prefer not to say</option>
+          </select>
+        </label>
+       </fieldset>
+       <fieldset>
+         <p>Which of these skill sets do you possess:</p>
+        <label"> 
+          <input type="checkbox" value="agility" />
+          Agility
+        </label>
+        <label> 
+          <input type="checkbox" value="speed" />
+          Speed
+        </label>
+        <label> 
+          <input type="checkbox" value="high hp"/>
+          High HP
+        </label>
+        <label> 
+          <input type="checkbox" value="high mp" />
+          High MP
+        </label>
+       </fieldset>
+       <fieldset>
+         <p>Tell us more about yourself:</p>
+         <textarea placeholder="Say nice things about yourself basically" rows="5"></textarea>
+      </fieldset>
+      <button id="submit" type="submit">Submit</button>
+      </form>
+    </main>
+  </body>  
+</html>
